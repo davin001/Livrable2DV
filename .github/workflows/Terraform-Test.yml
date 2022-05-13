@@ -6,7 +6,7 @@ on:
     - Test
   pull_request:
 jobs:
-  Livrable2DV:
+  terraform:
   terrascan_job:
     runs-on: ubuntu-latest
     name: terrascan-action
