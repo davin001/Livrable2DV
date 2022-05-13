@@ -4,7 +4,7 @@ name: 'Terraform-Test'
 on:
   push:
     branches:
-    - test
+    - Test
   pull_request:
  
 jobs:
