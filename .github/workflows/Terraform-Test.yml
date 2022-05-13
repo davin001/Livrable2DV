@@ -7,9 +7,6 @@ on:
   pull_request:
 jobs:
   terraform:
-#name: terrascan
-#on: [workflow_dispatch]
-jobs:
   terrascan_job:
     runs-on: ubuntu-latest
     name: terrascan-action
