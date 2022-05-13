@@ -22,7 +22,7 @@ jobs:
         policy_type: 'azure'
         only_warn: false
         sarif_upload: false
-    name: 'terraform'
+    #name: 'terraform'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
