@@ -21,10 +21,30 @@ variable "location" {
   description = "Location of Azure resources"
   default     = "canadaeast"
 }
+variable "location1" {
+  type        = string
+  description = "Location of Azure resources"
+  default     = "westus"
+}
+variable "location2" {
+  type        = string
+  description = "Location of Azure resources"
+  default     = "westuk"
+}
 variable "resource_group_name" {
   type        = string
-  description = "Resource Group name to where resources are going to be deployed"
+  description = "Resource Group name"
   default     = "Livrable2DV"
+}
+variable "resource_group_name1" {
+  type        = string
+  description = "Resource Group name RG1"
+  default     = "Livrable2DV-RG1"
+}
+variable "resource_group_name2" {
+  type        = string
+  description = "Resource Group RG2"
+  default     = "Livrable2DV-RG2"
 }
 variable "container_group_name" {
   type        = string
@@ -38,6 +58,14 @@ variable "container_group_dns" {
 }
 resource "azurerm_resource_group" "demo" {
   name     = var.resource_group_name
+  location = var.location
+}
+resource "azurerm_resource_group" "RG1" {
+  name     = var.resource_group_name1
+  location = var.location
+}
+resource "azurerm_resource_group" "RG2" {
+  name     = var.resource_group_name2
   location = var.location
 }
 resource "azurerm_container_group" "aci" {
