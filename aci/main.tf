@@ -8,8 +8,8 @@ terraform {
 # backend
 terraform {
   backend "azurerm" {
-  resource_group_name = "your-resource-group"
-  storage_account_name = "yourstorageaccount123"
+  resource_group_name = "terraform"
+  storage_account_name = "tfstate6767"
   container_name = "tfstate"
   key = "terraform.tfstate"
  }
