@@ -6,7 +6,7 @@ on:
     - Test
   pull_request:
 jobs:
-  terraform:
+  Livrable2DV:
   terrascan_job:
     runs-on: ubuntu-latest
     name: terrascan-action
@@ -22,7 +22,7 @@ jobs:
         policy_type: 'azure'
         only_warn: false
         sarif_upload: false
-    name: 'Livrable2DV'
+    name: 'terraform'
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
