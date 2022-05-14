@@ -18,18 +18,18 @@ provider "azurerm" {
 }
 variable "location" {
   type        = string
-  description = "Location of Azure resources"
+  description = "Canada Est"
   default     = "canadaeast"
 }
 variable "location1" {
   type        = string
-  description = "Location of Azure resources"
+  description = "USA West"
   default     = "westus"
 }
 variable "location2" {
   type        = string
-  description = "Location of Azure resources"
-  default     = "westuk"
+  description = "Canada Centre"
+  default     = "canadacentral"
 }
 variable "resource_group_name" {
   type        = string
@@ -62,11 +62,11 @@ resource "azurerm_resource_group" "demo" {
 }
 resource "azurerm_resource_group" "RG1" {
   name     = var.resource_group_name1
-  location = var.location
+  location = var.location1
 }
 resource "azurerm_resource_group" "RG2" {
   name     = var.resource_group_name2
-  location = var.location
+  location = var.location2
 }
 resource "azurerm_container_group" "aci" {
   name                = var.container_group_name
