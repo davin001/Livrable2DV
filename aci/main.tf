@@ -28,8 +28,8 @@ variable "location1" {
 }
 variable "location2" {
   type        = string
-  description = "UK Ouest"
-  default     = "westuk"
+  description = "Canada Centre"
+  default     = "canadacentral"
 }
 variable "resource_group_name" {
   type        = string
