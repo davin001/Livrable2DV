@@ -56,7 +56,7 @@ variable "container_group_dns" {
   description = "aci name"
   default     = "TP2-DV"
 }
-resource "azurerm_resource_group" "demo" {
+resource "azurerm_resource_group" "RG-Demo-TP2" {
   name     = var.resource_group_name
   location = var.location
 }
@@ -86,6 +86,6 @@ resource "azurerm_container_group" "aci" {
     }
   }
   depends_on = [
-    azurerm_resource_group.demo,
+    azurerm_resource_group.RG-Demo-TP2,
   ]
 }
