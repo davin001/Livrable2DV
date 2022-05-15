@@ -79,7 +79,7 @@ variable "container_group_name1" {
 variable "container_group_dns1" {
   type        = string
   description = "aci name"
-  default     = "TP2-DV"
+  default     = "TP2-DV-1"
 }
 resource "azurerm_resource_group" "RG1-DV" {
   name     = var.resource_group_name1
@@ -124,7 +124,7 @@ variable "container_group_name2" {
 variable "container_group_dn2s" {
   type        = string
   description = "aci name"
-  default     = "TP2-DV"
+  default     = "TP2-DV-2"
 }
 resource "azurerm_resource_group" "RG2-DV" {
   name     = var.resource_group_name2
