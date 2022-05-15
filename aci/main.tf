@@ -121,7 +121,7 @@ variable "container_group_name2" {
   description = "aci name"
   default     = "nginx"
 }
-variable "container_group_dn2s" {
+variable "container_group_dns2" {
   type        = string
   description = "aci name"
   default     = "TP2-DV-2"
