@@ -63,8 +63,8 @@ resource "azurerm_container_group" "aci" {
 }
 variable "location1" {
   type        = string
-  description = "USA West"
-  default     = "westus"
+  description = "Canada East"
+  default     = "canadaeast"
 }
 variable "resource_group_name1" {
   type        = string
