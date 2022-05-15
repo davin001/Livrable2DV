@@ -85,7 +85,7 @@ resource "azurerm_resource_group" "RG1-DV" {
   name     = var.resource_group_name1
   location = var.location1
 }
-resource "azurerm_container_group" "aci" {
+resource "azurerm_container_group" "aci1" {
   name                = var.container_group_name1
   resource_group_name = var.resource_group_name1
   location            = var.location1
@@ -131,7 +131,7 @@ resource "azurerm_resource_group" "RG2-DV" {
   location = var.location2
 }
 
-resource "azurerm_container_group" "aci" {
+resource "azurerm_container_group" "aci2" {
   name                = var.container_group_name2
   resource_group_name = var.resource_group_name2
   location            = var.location2
